@@ -1,5 +1,7 @@
 <?php
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
+$db = parse_url($_ENV["DATABASE"]);
+
 /** Nom de la base de données de WordPress. */
 define('DB_NAME', 'trim($db["path"], "/")');
 

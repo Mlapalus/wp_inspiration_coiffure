@@ -10,4 +10,4 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
 
 /** Adresse de l’hébergement MySQL. */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');

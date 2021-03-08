@@ -1,6 +1,6 @@
 <?php
 switch ($hostname) {
-  case 'localhost':
+  case 'localhost:8000':
     define('WP_ENV', 'development');
     break;
   case 'inspiration-coiffure.herokuapp.com':

@@ -13,3 +13,6 @@ define('DB_PASSWORD', $db["pass"]);
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', $db["host"]);
+
+define('DISALLOW_FILE_EDIT', true);
+define('WP_POST_REVISIONS', 5);

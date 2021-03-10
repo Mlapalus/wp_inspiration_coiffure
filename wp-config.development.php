@@ -11,3 +11,8 @@ define('DB_PASSWORD', 'root');
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', '127.0.0.1');
+
+
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', true);

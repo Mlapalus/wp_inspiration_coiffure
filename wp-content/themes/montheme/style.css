@@ -6,3 +6,12 @@ Description: The first theme
 Version: 1.O
 Tewt Domain: mytheme
 */
+
+.menu {
+  position: fixed;
+  top: 0;
+}
+
+.admin-bar .menu {
+  top: 32px;
+}

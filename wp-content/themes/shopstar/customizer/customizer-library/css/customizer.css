@@ -5,7 +5,8 @@
 	width: 50px;
 }
 
-.customize-control-warning {
+.customize-control-warning,
+.customize-control-warning a {
 	color: red;
 	font-weight: 400;
 }

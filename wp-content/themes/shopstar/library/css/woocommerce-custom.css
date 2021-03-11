@@ -464,6 +464,10 @@ Shopstar - Custom WooCommerce Styling
 
 /* -------- Product List Page -------- */
 
+.woocommerce ul.products li.product .woocommerce-loop-category__title .count {
+	background: transparent;
+}
+
 .woocommerce .woocommerce-result-count,
 .woocommerce-page .woocommerce-result-count {
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.015);

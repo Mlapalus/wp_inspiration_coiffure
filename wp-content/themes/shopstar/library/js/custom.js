@@ -42,7 +42,7 @@
         var focused_mobile_menu_item;
         
         // Remove all hover classes from menu items when anything  on the page is clicked
-        $( document ).bind( 'click', function(e) {
+        $( document ).on( 'click', function(e) {
         	if ( e.target != focused_mobile_menu_item ) {
         		$( 'body.mobile-device .main-navigation li.menu-item-has-children' ).removeClass('hover');
         	}
@@ -51,7 +51,7 @@
         });
 
         // 
-        $( 'body.mobile-device .main-navigation li.menu-item-has-children > a' ).bind( 'click', function(e) {
+        $( 'body.mobile-device .main-navigation li.menu-item-has-children > a' ).on( 'click', function(e) {
         	e.preventDefault();
         	menu_item = $(this).parent();
 
@@ -69,17 +69,24 @@
         shopstar_set_slider_height();
         
         // Mobile menu toggle button
-        $( '.main-navigation .menu-toggle' ).click( function(e){
+        $( '.main-navigation .menu-toggle' ).on( 'click', function(e) {
             $( 'body' ).toggleClass( 'show-main-menu' );
+            
+	    	if ( $( 'body' ).hasClass( 'show-main-menu' ) ) {
+	        	$( this ).attr( 'aria-expanded', 'true' );
+	    	} else {
+	    		$( this ).attr( 'aria-expanded', 'false' );
+	    	}
         });
-        $( '.main-navigation .close-button' ).click( function(e){
+        
+        $( '.main-navigation .close-button' ).on( 'click', function(e) {
             $( '.main-navigation .menu-toggle' ).click();
         });
     	
         // Search Show / Hide
     	var searchHeight = $(".search-slidedown").height();
     	
-        $(".search-button").click(function(e){
+        $(".search-button").on( 'click', function(e) {
         	e.preventDefault();
         	
         	if ( !$(".search-slidedown").hasClass('open') ) {
@@ -93,8 +100,8 @@
         });
         
         // Don't search if no keywords have been entered
-        $(".search-submit").bind('click', function(event) {
-        	if ( $(this).parents(".search-form").find(".search-field").val() == "") event.preventDefault();
+        $(".search-submit").on( 'click', function(e) {
+        	if ( $(this).parents(".search-form").find(".search-field").val() == "") e.preventDefault();
         });
     	
     	var element;

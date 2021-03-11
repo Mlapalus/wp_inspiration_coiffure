@@ -10,7 +10,7 @@ if ( function_exists( 'max_mega_menu_is_enabled' ) && max_mega_menu_is_enabled( 
 } else {
 ?>
 <nav id="site-navigation" class="main-navigation <?php echo ( !is_front_page() || ( get_theme_mod( 'shopstar-slider-type', customizer_library_get_default( 'shopstar-slider-type' ) ) == 'shopstar-no-slider' && !get_header_image() ) ) ? 'bottom-border mobile' : 'bottom-border'; ?>" role="navigation">
-	<span class="menu-toggle">
+	<span class="menu-toggle" aria-expanded="false">
 		<i class="otb-fa otb-fa-bars"></i>
 	</span>
 	

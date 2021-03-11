@@ -6,7 +6,7 @@
  *
  * @package shopstar
  */
-define( 'SHOPSTAR_THEME_VERSION' , '1.0.95' );
+define( 'SHOPSTAR_THEME_VERSION' , '1.0.96' );
 
 global $shopstar_demo_slides;
 
@@ -128,7 +128,7 @@ function shopstar_setup() {
 	if ( get_theme_mod( 'shopstar-woocommerce-product-image-zoom', true ) ) {	
 		add_theme_support( 'wc-product-gallery-zoom' );
 	}
-		
+	
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );	
 }
@@ -674,12 +674,20 @@ if (!function_exists('woocommerce_template_loop_add_to_cart')) {
 */
 
 function shopstar_excerpt_length( $length ) {
-	return get_theme_mod( 'shopstar-blog-excerpt-length', customizer_library_get_default( 'shopstar-blog-excerpt-length' ) );
+	if ( is_admin() || ( !is_home() && !is_category() && !is_tag() && !is_search() ) ) {
+		return $length;
+	} else {
+		return get_theme_mod( 'shopstar-blog-excerpt-length', customizer_library_get_default( 'shopstar-blog-excerpt-length' ) );
+	}
 }
 add_filter( 'excerpt_length', 'shopstar_excerpt_length', 999 );
 
 function shopstar_excerpt_more( $more ) {
-	return ' <a class="read-more" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . wp_kses_post( pll__( get_theme_mod( 'shopstar-blog-read-more-text', customizer_library_get_default( 'shopstar-blog-read-more-text' ) ) ), 'shopstar' ) . '</a>';
+	if ( is_admin() ) {
+		return $more;
+	} else {
+		return ' <a class="read-more" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . wp_kses_post( pll__( get_theme_mod( 'shopstar-blog-read-more-text', customizer_library_get_default( 'shopstar-blog-read-more-text' ) ) ), 'shopstar' ) . '</a>';
+	}
 }
 add_filter( 'excerpt_more', 'shopstar_excerpt_more' );
 

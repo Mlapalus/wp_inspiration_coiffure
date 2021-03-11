@@ -16,3 +16,4 @@ define('DB_HOST', $db["host"]);
 
 define('DISALLOW_FILE_EDIT', true);
 define('WP_POST_REVISIONS', 5);
+define('AUTOSAVE_INTERVAL', 3000);

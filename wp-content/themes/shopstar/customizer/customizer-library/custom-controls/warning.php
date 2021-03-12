@@ -31,7 +31,7 @@ class Customizer_Library_Warning extends WP_Customize_Control {
 	public function render_content() {
 		?>
 		<label>
-			<span class="customize-control-warning <?php echo esc_attr( $this->class ); ?>"><?php echo esc_html( $this->label ); ?></span>
+			<span class="customize-control-warning <?php echo esc_attr( $this->class ); ?>"><?php echo $this->label; ?></span>
 		</label>
 		<?php
 	}

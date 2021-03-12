@@ -1,0 +1,258 @@
+# Translation of Themes - Serene in French (France)
+# This file is distributed under the same license as the Themes - Serene package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-01-29 13:57:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Serene\n"
+
+#. Description of the plugin/theme
+msgid "Serene is a truly beautiful blogging theme with post format support. The design's elegance stems from its simplistic and spacious design. Browsing the theme is easy on the eyes and on the mind, each new post arriving like a breath of fresh air."
+msgstr "Serene est un véritable beau thème de blog avec des formats d&rsquo;articles inclus. Son élégance provient de son apparence simple et spacieuse. Ce thème est clair autant pour les yeux que pour l&rsquo;esprit, chaque nouvel article arrivant comme une bouffée d'air frais."
+
+#. Theme Name of the plugin/theme
+msgid "Serene"
+msgstr "Serene"
+
+#: includes/no-results.php:22
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. Essayez en lançant une recherche."
+
+#: includes/no-results.php:17
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Désolé, mais rien ne correspond à votre recherche. Veuillez réessayer avec des mots différents."
+
+#: includes/no-results.php:13
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pr&ecirc;t à publier votre premier article&nbsp;? <a href=\"%1$s\">Lancez-vous</a>&nbsp;!"
+
+#: includes/no-results.php:9
+msgid "No Results Found"
+msgstr "Aucun r&eacute;sultat trouv&eacute;"
+
+#: includes/navigation.php:19
+msgid "&gt;"
+msgstr "&gt;"
+
+#: includes/navigation.php:18
+msgid "&lt;"
+msgstr "&lt;"
+
+#: header.php:54
+msgid "Google+"
+msgstr "Google+"
+
+#: header.php:49
+msgid "Twitter"
+msgstr "Twitter"
+
+#: header.php:44
+msgid "Facebook"
+msgstr "Facebook"
+
+#: functions.php:668
+msgid "1"
+msgid_plural "%1$s"
+msgstr[0] "%1$s"
+msgstr[1] "%1$s"
+
+#: functions.php:666
+msgctxt "post info day"
+msgid "d"
+msgstr "d"
+
+#: functions.php:665
+msgctxt "post info month name"
+msgid "M"
+msgstr "M"
+
+#: functions.php:545
+msgid "Page Subtitle"
+msgstr "Page sous-titres"
+
+#: functions.php:531
+msgid "Post Text Color"
+msgstr "Couleur du texte de l&rsquo;article"
+
+#: functions.php:528
+msgid "Here you can set a background color for the post."
+msgstr "Couleur d&rsquo;arrière plan de l&rsquo;article"
+
+#: functions.php:526
+msgid "Hex Value"
+msgstr "Valeur hexadécimale"
+
+#: functions.php:525
+msgid "Background Color"
+msgstr "Couleur d&rsquo;arrière-plan"
+
+#: functions.php:521
+msgid "URL"
+msgstr "Adresse web"
+
+#: functions.php:508
+msgid "Light"
+msgstr "Clair"
+
+#: functions.php:507
+msgid "Dark"
+msgstr "Sombre"
+
+#: functions.php:499
+msgid "Page Settings"
+msgstr "Réglages des pages"
+
+#: functions.php:498
+msgid "Post Settings"
+msgstr "Réglages des articles"
+
+#: functions.php:349
+msgid "Display full content of posts on index pages"
+msgstr "Afficher tout le contenu des articles sur la page d&rsquo;index"
+
+#: functions.php:337
+msgid "Google+ Profile URL"
+msgstr "Adresse de profil Google+"
+
+#: functions.php:325
+msgid "Twitter Profile URL"
+msgstr "Adresse de profil Twitter"
+
+#: functions.php:313
+msgid "Facebook Profile URL"
+msgstr "Adresse de profil Facebook"
+
+#: functions.php:301
+msgid "Accent Color"
+msgstr "Couleur du contraste"
+
+#: functions.php:289
+msgid "Theme Settings"
+msgstr "Réglages du thème"
+
+#: functions.php:274
+msgid "Navigation Menu"
+msgstr "Menu de navigation"
+
+#: functions.php:260
+msgid "Reply"
+msgstr "Répondre"
+
+#: functions.php:251
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de validation."
+
+#: functions.php:246
+msgid "(Edit)"
+msgstr "(Modifier)"
+
+#. translators: 1: date, 2: time
+#: functions.php:243
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#. Translators: 1 is author, 2 is category list.
+#: functions.php:220
+msgid "Posted by %1$s in %2$s"
+msgstr "Publié par %1$s dans %2$s"
+
+#: functions.php:209
+msgid "1 Comment"
+msgstr "Un commentaire"
+
+#: functions.php:207
+msgid "No Comments"
+msgstr "Pas de commentaire"
+
+#: functions.php:205
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: functions.php:190
+msgid "Posts by %s"
+msgstr "Articles par %s"
+
+#: functions.php:177
+msgid "Page %s"
+msgstr "Page %s"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Raleway, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:93
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:80
+msgid "read more"
+msgstr "Lire la suite"
+
+#: functions.php:62
+msgid "Footer Area #3"
+msgstr "Zone de widget bas de page #3"
+
+#: functions.php:53
+msgid "Footer Area #2"
+msgstr "Zone de widget bas de page #2"
+
+#: functions.php:44
+msgid "Footer Area #1"
+msgstr "Zone de widget bas de page #1"
+
+#: functions.php:35
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: footer.php:11
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème %1$s par %2$s."
+
+#: content-quote.php:19
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: content-audio.php:63 content-gallery.php:29 content-link.php:44
+#: content-quote.php:43 content.php:62 page.php:39
+msgid "Edit this post"
+msgstr "Modifier cet article"
+
+#: content-audio.php:56 content-gallery.php:22 content-link.php:37
+#: content-quote.php:36 content.php:55 page.php:31
+msgid "Pages"
+msgstr "Pages"
+
+#: comments.php:47
+msgid "Submit a Comment"
+msgstr "Envoyer un commentaire"
+
+#: comments.php:19 comments.php:30
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Commentaires plus récents <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:18 comments.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Commentaires plus anciens"
+
+#: comments.php:14
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "Un commentaire"
+msgstr[1] "%1$s commentaires"
+
+#. Author URI of the plugin/theme
+msgid "http://www.elegantthemes.com"
+msgstr "http://www.elegantthemes.com"
+
+#. Author of the plugin/theme
+msgid "Elegant Themes"
+msgstr "Elegant Themes"
+
+#. Theme URI of the plugin/theme
+msgid "http://www.elegantthemes.com/gallery/serene"
+msgstr "http://www.elegantthemes.com/gallery/serene"

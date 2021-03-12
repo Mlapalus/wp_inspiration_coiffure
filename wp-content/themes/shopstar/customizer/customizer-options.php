@@ -296,7 +296,7 @@ function shopstar_customizer_library_options() {
     
     $options['shopstar-slider-enabled-warning'] = array(
     	'id' => 'shopstar-slider-enabled-warning',
-    	'label'   => __( 'Please note: The header image will not display on your site as the slider is currently enabled. To make the header image visible you will first need to disable the slider.', 'shopstar' ),
+    	'label'   => __( 'Please note: The header image will not display on your site as the slider is currently enabled. To make the header image visible you will first need to disable the <a href="#shopstar-slider" rel="tc-section">slider</a>.', 'shopstar' ),
     	'section' => $section,
     	'type'    => 'warning',
     	'priority' => 0,
